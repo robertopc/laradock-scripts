@@ -1,0 +1,13 @@
+#!/bin/bash
+
+file=`basename $0`
+# help message
+if [ "$1" == "--help" ]; then
+echo "$file - show logs of laradock containers\
+usage: $file container_tag"
+exit
+else
+projectname=$1
+fi
+
+docker logs -f ${file}_${1}_1
