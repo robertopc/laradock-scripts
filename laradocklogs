@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file=`basename $0`
+file=`basename $(pwd)`
 # help message
 if [ "$1" == "--help" ]; then
 echo "$file - show logs of laradock containers\
