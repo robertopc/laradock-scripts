@@ -2,7 +2,7 @@
 
 file=`basename $0`
 # help message
-if [ $1 == "--help" ]; then
+if [ "$1" == "--help" ]; then
 echo "$file - start a new laravel project with laradock\
 usage: $file [project name]"
 exit
