@@ -27,6 +27,7 @@ sed -i 's/DB_HOST=.*/DB_HOST=mysql/' .env
 sed -i 's/DB_DATABASE=.*/DB_DATABASE=default/' .env
 sed -i 's/DB_USERNAME=.*/DB_USERNAME=root/' .env
 sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=root/' .env
+sed -i "s/DATA_PATH_HOST=~/.laradock/data/DATA_PATH_HOST=~/.laradock/{$projectname}/data/" .env
 git submodule add https://github.com/laradock/laradock
 cd laradock
 cp .env.example .env
