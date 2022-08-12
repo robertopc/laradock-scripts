@@ -14,4 +14,4 @@ exit
 fi
 
 cd laradock
-docker-compose up -d nginx mysql adminer
+docker-compose up -d nginx postgres adminer
